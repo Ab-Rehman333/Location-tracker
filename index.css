@@ -2,6 +2,204 @@
 .icon-check {
   display: none;
 }
-i{
+
+i {
   cursor: pointer;
+}
+
+body {
+  background-image: url("https://source.unsplash.com/Im7lZjxeLhg");
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.main-div {
+  background-color: #0000006e;
+  border-radius: .3em;
+  padding: 3em 9em;
+
+}
+
+.main-div>* {
+  color: white;
+}
+
+.head {
+  font-size: 3rem;
+}
+
+.page-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.white {
+  color: white;
+}
+
+.subtitleD {
+  margin-bottom: 1rem;
+}
+
+.inputF {
+  padding: .8em 3rem;
+  width: 100%;
+  border: 1px solid #c5c5c5;
+  background-color: transparent;
+  color: white;
+  border-radius: .3rem;
+
+}
+
+.inputF::placeholder {
+  color: white;
+}
+
+.inputF:focus {
+  outline: none;
+}
+
+.name {
+  display: flex;
+  justify-content: center;
+  padding-top: 2em;
+  align-items: center;
+}
+
+.name>p {
+  font-family: Oswald;
+  font-size: 1.4rem;
+  animation: Color 4s linear infinite;
+  -webkit-animation: Color 4s ease-in-out infinite;
+}
+
+@keyframes Color {
+  0% {
+    color: #A0D468;
+  }
+
+  20% {
+    color: #4FC1E9;
+  }
+
+  40% {
+    color: #FFCE54;
+  }
+
+  60% {
+    color: #FC6E51;
+  }
+
+  80% {
+    color: #ED5565;
+  }
+
+  100% {
+    color: #AC92EC;
+  }
+}
+
+@-moz-keyframes Color {
+  0% {
+    color: #A0D468;
+  }
+
+  20% {
+    color: #4FC1E9;
+  }
+
+  40% {
+    color: #FFCE54;
+  }
+
+  60% {
+    color: #FC6E51;
+  }
+
+  80% {
+    color: #ED5565;
+  }
+
+  100% {
+    color: #AC92EC;
+  }
+}
+
+@-webkit-keyframes Color {
+  0% {
+    color: #A0D468;
+  }
+
+  20% {
+    color: #4FC1E9;
+  }
+
+  40% {
+    color: #FFCE54;
+  }
+
+  60% {
+    color: #FC6E51;
+  }
+
+  80% {
+    color: #ED5565;
+  }
+
+  100% {
+    color: #AC92EC;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:660px) {
+  .main-div {
+    background-color: #0000006e;
+    border-radius: .3em;
+    padding: 3em 3em;
+    width: 100%;
+  }
+
+  .page-wrapper {
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .head {
+    font-size: 2rem;
+  }
+
+  .demo {
+    width: 100%;
+  }
+}
+
+@media (max-width: 660px) {
+  .main-div {
+
+    padding: 3em 1em;
+
+  }
+}
+
+@media (min-width:660px) {
+
+  .demo {
+    width: 41%;
+  }
 }

@@ -29,7 +29,6 @@ async function fetchApi() {
         let places = gotData.places;
         let output = '';
         places.forEach(singleItem => {
-            console.log(singleItem)
             output += `
                 <article class="message is-primary">
                     <div class="message-header">
